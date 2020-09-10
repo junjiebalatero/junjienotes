@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 const { MONGO_URI } = require('./config');
 const bodyParser = require('body-parser');
 const app = express();
-var cors = require('cors')
 
 // Routes
 const postRoutes = require('./routes/api/posts');
@@ -12,7 +11,6 @@ const postRoutes = require('./routes/api/posts');
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors()) // Use this after the variable declaration
 // Connect to MongoDB
 
 mongoose.connect(MONGO_URI, {

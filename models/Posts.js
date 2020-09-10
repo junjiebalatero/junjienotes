@@ -2,11 +2,19 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const PostSchema = new Schema({    	
-	title: {
+	name: {
 		type: String,
 		required: true
 	},
-	body: {
+	app: {
+		type: String,
+		required: true
+	},
+	username_or_email: {
+		type: String,
+		required: true
+	},
+	password: {
 		type: String,
 		required: true
 	},
