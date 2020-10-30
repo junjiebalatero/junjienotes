@@ -46,6 +46,10 @@ const PostSchema = new Schema({
 		type: String,
 		required: true
 	},
+	IPFS_attachment: {
+		type: String,
+		required: true
+	},
 	date: {
 		type: Date,
 		default: Date.now
