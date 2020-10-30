@@ -2,23 +2,47 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const PostSchema = new Schema({    	
-	name: {
+	ravencoin_asset_name: {
 		type: String,
 		required: true
 	},
-	app: {
+	total_circulating_supply: {
 		type: String,
 		required: true
 	},
-	username_or_email: {
+	description: {
 		type: String,
 		required: true
 	},
-	password: {
+	for_sale: {
 		type: String,
 		required: true
 	},
-	imageUrl: {
+	contact_address: {
+		type: String,
+		required: true
+	},
+	contact_email: {
+		type: String,
+		required: true
+	},
+	contact_cellphone: {
+		type: String,
+		required: true
+	},
+	contact_phone: {
+		type: String,
+		required: true
+	},
+	nick_name: {
+		type: String,
+		required: true
+	},
+	issuer: {
+		type: String,
+		required: true
+	},
+	website_url: {
 		type: String,
 		required: true
 	},
