@@ -29,7 +29,7 @@ mongoose.connect(MONGO_URI, {
     useUnifiedTopology: true,
     useFindAndModify: false
 })
-    .then(() => console.log('MongoDB connected!'))
+    .then(() => console.log('Mongo Atlas connected!'))
     .catch(err => console.log(err));
 
 // User routes
