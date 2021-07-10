@@ -38,6 +38,3 @@ app.use('/api/posts', postRoutes);
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log('Server run at port ${PORT}'));
-
-
-// mongodb+srv://junjieapi:junjieapi@cluster0.p63jc.mongodb.net/dbjunjieatlas?retryWrites=true&w=majority
